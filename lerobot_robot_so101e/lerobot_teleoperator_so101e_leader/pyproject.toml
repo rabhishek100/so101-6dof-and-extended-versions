@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot_teleoperator_so101e_leader"
+version = "0.1.0"
+description = "SO-101E leader teleoperator plugin for Hugging Face LeRobot."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "rabhishek100" }]
+license = { text = "Apache-2.0" }
+dependencies = [
+    "lerobot>=0.3.4",
+]
+
+[project.urls]
+"Homepage" = "https://huggingface.co/docs/lerobot"
+
+[tool.setuptools.packages.find]
+where = ["src"]
